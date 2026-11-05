@@ -11,4 +11,5 @@ Site statique (HTML et CSS, sans outil de compilation), publié avec GitHub Page
 
 Le site n'utilise ni cookies, ni mesure d'audience, ni ressource externe.
 
-À faire quand l'app sera publiée : remplacer « Bientôt sur l'App Store » (dans `index.html`) par le badge officiel d'Apple et le lien vers la fiche de l'app.
+À faire quand l'app sera publiée : remplacer « Bientôt sur l'App Store » (dans `index.html`) par le badge officiel d'Apple et le lien vers la fiche de l'app. 
+ 
