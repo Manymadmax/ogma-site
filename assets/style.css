@@ -6,42 +6,25 @@
 @font-face { font-family: "Source Serif 4"; src: url("fonts/SourceSerif4_500Medium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
 @font-face { font-family: "Source Serif 4"; src: url("fonts/SourceSerif4_400Regular_Italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
 
-/* Thème sombre (par défaut, comme l'app) */
+/* Thème clair (palette LIGHT de l'app), le seul utilisé */
 :root {
-  --page: #181818;
-  --raise: #232323;
-  --text: #FBF5E6;
-  --text-2: rgba(251, 245, 230, 0.74);
-  --text-3: rgba(251, 245, 230, 0.54);
-  --line: rgba(251, 245, 230, 0.12);
-  --line-2: rgba(251, 245, 230, 0.24);
-  --link: #FFE38C;
+  --page: #F7F2E8;
+  --raise: #FFFFFF;
+  --text: #1C1A17;
+  --text-2: rgba(28, 26, 23, 0.76);
+  --text-3: rgba(28, 26, 23, 0.58);
+  --line: rgba(28, 26, 23, 0.12);
+  --line-2: rgba(28, 26, 23, 0.26);
+  --link: #8A5605;
+  --glow-a: rgba(255, 179, 107, 0.42);
+  --glow-b: rgba(255, 122, 138, 0.18);
+  color-scheme: light;
   --u1: #FFE38C; /* Comprendre */
   --u2: #FFB36B; /* Décoder */
   --u3: #FF7A8A; /* Relier */
   --u4: #FB4B6B; /* Influencer */
-  --glow-a: rgba(255, 179, 107, 0.30);
-  --glow-b: rgba(251, 75, 107, 0.14);
   --sans: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  color-scheme: dark;
-}
-
-/* Thème clair (palette LIGHT de l'app) */
-@media (prefers-color-scheme: light) {
-  :root {
-    --page: #F7F2E8;
-    --raise: #FFFFFF;
-    --text: #1C1A17;
-    --text-2: rgba(28, 26, 23, 0.76);
-    --text-3: rgba(28, 26, 23, 0.58);
-    --line: rgba(28, 26, 23, 0.12);
-    --line-2: rgba(28, 26, 23, 0.26);
-    --link: #8A5605;
-    --glow-a: rgba(255, 179, 107, 0.42);
-    --glow-b: rgba(255, 122, 138, 0.18);
-    color-scheme: light;
-  }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -107,17 +90,13 @@ p { margin: 0 0 1em; text-wrap: pretty; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  -webkit-mask-image: radial-gradient(closest-side, #000 70%, transparent 100%);
-  mask-image: radial-gradient(closest-side, #000 70%, transparent 100%);
 }
 @keyframes respire {
   from { opacity: 0.6; transform: scale(0.94); }
   to { opacity: 1; transform: scale(1.04); }
 }
-@media (prefers-color-scheme: light) {
-  .aura { padding: 9%; }
-  .aura img { border-radius: 22.5%; box-shadow: 0 28px 64px rgba(28, 26, 23, 0.24); -webkit-mask-image: none; mask-image: none; }
-}
+.aura { padding: 9%; }
+.aura img { border-radius: 22.5%; box-shadow: 0 28px 64px rgba(28, 26, 23, 0.24); }
 
 /* Accueil : ce que tu apprends */
 .learn { padding-block: clamp(32px, 5vw, 64px) clamp(72px, 11vw, 148px); }
