@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Politique de confidentialité – Ogma</title>
-<meta name="description" content="Ce que l’app Ogma garde sur ton téléphone, ce qu’elle envoie quand tu utilises l’IA et tes droits sur tes données.">
+<meta name="description" content="Ce que l’app Ogma garde sur ton téléphone, ce qu’elle envoie à ses serveurs et à ses prestataires, combien de temps, et tes droits.">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#F7F2E8">
 <meta name="format-detection" content="telephone=no">
@@ -12,12 +12,34 @@
 <meta property="og:site_name" content="Ogma">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="Politique de confidentialité – Ogma">
-<meta property="og:description" content="Ce que l’app Ogma garde sur ton téléphone, ce qu’elle envoie quand tu utilises l’IA et tes droits sur tes données.">
+<meta property="og:description" content="Ce que l’app Ogma garde sur ton téléphone, ce qu’elle envoie à ses serveurs et à ses prestataires, combien de temps, et tes droits.">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/SourceSerif4_500Medium.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Figtree_400Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/style.css">
+<style>
+  .doc ul { margin: 0 0 1em; padding-left: 1.25em; color: var(--text-2); }
+  .doc li { margin-bottom: 0.45em; padding-left: 0.15em; }
+  .doc li::marker { color: var(--text-3); }
+  .doc strong { color: var(--text); font-weight: 600; }
+  .doc .table-wrap { margin: 0 0 1.25em; overflow-x: auto; }
+  .doc table { width: 100%; border-collapse: collapse; font-size: 0.96875rem; line-height: 1.5; }
+  .doc th, .doc td { padding: 11px 14px 11px 0; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; color: var(--text-2); }
+  .doc th { color: var(--text); font-weight: 600; border-bottom-color: var(--line-2); }
+  .doc td:first-child { color: var(--text); }
+  .doc .sommaire { margin: 0 0 8px; padding: 18px 20px; border-radius: 14px; background: var(--raise); border: 1px solid var(--line); }
+  .doc .sommaire ul { margin: 0; }
+  .doc .sommaire li:last-child { margin-bottom: 0; }
+  @media (max-width: 600px) {
+    .doc table, .doc tbody, .doc tr, .doc td { display: block; width: 100%; }
+    .doc thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .doc tr { padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .doc td { padding: 2px 0; border: 0; }
+    .doc td:first-child { margin-bottom: 4px; font-weight: 600; }
+    .doc td[data-label]::before { content: attr(data-label) "\00a0: "; color: var(--text-3); }
+  }
+</style>
 </head>
 <body>
 <a class="skip" href="#contenu">Aller au contenu</a>
@@ -28,38 +50,109 @@
 <main id="contenu">
 <article class="doc">
   <h1>Politique de confidentialité</h1>
-  <p class="meta">Dernière mise à jour : 4 novembre 2026.</p>
-  <p class="lead">Responsable des données : Maxence Delporte, Genève (Suisse). Contact : <a href="mailto:appogma@gmail.com">appogma@gmail.com</a>.</p>
+  <p class="meta">Dernière mise à jour : 6 novembre 2026.</p>
+  <p class="lead">Ogma est une application éditée par Maxence Delporte, Genève (Suisse), responsable de tes données. Contact : <a href="mailto:contact@appogma.com">contact@appogma.com</a>.</p>
+
   <h2 id="lessentiel">L’essentiel</h2>
-  <p>Ogma fonctionne sans compte. Ta progression et ce que tu écris sont gardés sur ton téléphone. Ogma n’affiche pas de publicité, ne mesure pas ton activité et ne vend aucune donnée.</p>
-  <p>Tes textes, rêves ou enregistrements ne quittent ton téléphone que lorsque tu utilises une fonction d’IA, et ne sont pas conservés sur nos serveurs.</p>
-  <h2 id="sur-ton-telephone">Sur ton téléphone</h2>
-  <p>Ton prénom, ton genre, tes réponses à l’onboarding, ta progression (leçons, quiz, série, missions, scénarios), ton journal, tes rêves, tes affirmations, tes favoris, tes échanges avec Ogma, tes situations créées et le texte de tes essais à l’oral sont enregistrés uniquement sur ton téléphone.</p>
-  <p>Tu peux les effacer dans Réglages (progression, conversations, réflexions, rêves) ou en supprimant l’app ; les situations créées avec l’IA disparaissent en supprimant l’app. Ton prénom et tes réponses à l’onboarding ne sont jamais envoyés.</p>
-  <p>Ogma tire au hasard un identifiant anonyme, gardé sur ton téléphone. Il sert à compter ton crédit d’IA du mois et accompagne les messages que tu envoies à l’équipe ; il ne contient ni ton nom, ni ton numéro, ni l’identifiant de ton iPhone.</p>
+  <div class="sommaire">
+    <ul>
+      <li>Ogma fonctionne <strong>sans compte</strong> : ni inscription, ni adresse e-mail, ni mot de passe.</li>
+      <li>Ta progression et ce que tu écris restent <strong>sur ton téléphone</strong>.</li>
+      <li>Tes textes, rêves ou enregistrements ne partent que lorsque tu utilises une fonction d’IA, et <strong>ne sont pas conservés</strong> sur nos serveurs.</li>
+      <li>Pas de publicité, pas de mesure d’audience, pas de pistage publicitaire, aucune donnée vendue.</li>
+    </ul>
+  </div>
+
+  <h2 id="sur-ton-telephone">Ce qui reste sur ton téléphone</h2>
+  <p>Ces informations sont enregistrées uniquement dans l’app, sur ton téléphone :</p>
+  <ul>
+    <li>ton prénom, ton genre et tes réponses aux questions de bienvenue ;</li>
+    <li>ta progression : leçons, quiz, révisions, série, missions et parcours ;</li>
+    <li>ton journal de réflexions, tes rêves, tes affirmations et tes favoris ;</li>
+    <li>tes échanges avec « Demande à Ogma », les situations créées avec l’IA, le texte de tes essais à l’oral et les retours reçus ;</li>
+    <li>tes réglages : rappels, apparence, autorisations données dans l’app.</li>
+  </ul>
+  <p>Ton prénom et tes réponses aux questions de bienvenue ne sont jamais envoyés. Les rappels sont des notifications programmées sur ton téléphone, sans passer par un serveur. Le widget « Affirmation du jour » lit ses phrases dans un espace de ton iPhone partagé entre l’app et le widget.</p>
+  <p>Ogma tire aussi au hasard un <strong>identifiant anonyme</strong>, gardé sur ton téléphone. Il ne contient ni ton nom, ni ton numéro, ni l’identifiant de ton iPhone. Il accompagne tes demandes à l’IA, tes messages et tes avis.</p>
+  <p>Tu peux effacer tes conversations, tes réflexions, tes rêves et ta progression dans Réglages, et toutes ces données en supprimant l’app. Selon tes réglages Apple, elles peuvent aussi figurer dans la sauvegarde de ton iPhone (iCloud ou ordinateur).</p>
+
   <h2 id="quand-tu-utilises-lia">Quand tu utilises l’IA</h2>
-  <p>Selon la fonction, Ogma envoie : ta question (Demande à Ogma) ; ta description (Crée ta situation) ; ton enregistrement et la situation jouée (conversations à l’oral) ; ta dictée (journal des rêves, nouvelle réflexion, Demande à Ogma) ; le texte de la réflexion en cours (pistes du journal, seulement si tu l’as autorisé) ; tes 30 derniers rêves au plus (analyse des rêves, seulement si tu l’as autorisée et lancée).</p>
-  <p>Ces données passent par nos fonctions hébergées chez Supabase, puis par OpenRouter, qui les transmet au modèle d’IA : Claude (Anthropic), ou Mistral Small en secours. La voix est transcrite par Gemini (Google), ou Voxtral (Mistral) en secours. Ces modèles fonctionnent chez des hébergeurs choisis par OpenRouter (par exemple Amazon Web Services, Google, Mistral ou DeepInfra).</p>
-  <p>Ogma ne conserve ni tes textes ni tes enregistrements : la réponse t’est renvoyée puis gardée sur ton téléphone. OpenRouter ne garde pas le contenu des demandes, seulement des informations techniques (modèle utilisé, taille, coût). Chaque demande exige un hébergeur qui ne conserve pas tes données et ne s’en sert pas pour entraîner ses modèles ; si aucun ne remplit cette condition, la demande n’est pas envoyée.</p>
-  <p>Le micro n’est utilisé que lorsque tu appuies pour enregistrer.</p>
+  <p>Selon la fonction, Ogma envoie :</p>
+  <ul>
+    <li><strong>Demande à Ogma</strong> : ta question ;</li>
+    <li><strong>Crée ta situation</strong> : ta description ;</li>
+    <li><strong>Conversations à l’oral</strong> : ton enregistrement et la situation jouée ;</li>
+    <li><strong>Dictée</strong> (journal des rêves, nouvelle réflexion, Demande à Ogma) : ton enregistrement ;</li>
+    <li><strong>Pistes du journal</strong>, seulement si tu l’as autorisé : le texte de la réflexion en cours ;</li>
+    <li><strong>Analyse des rêves</strong>, seulement si tu l’as autorisée et lancée : tes 30 derniers rêves au plus, avec leur date.</li>
+  </ul>
+  <p>Chaque demande est accompagnée de ton identifiant anonyme et de ton identifiant d’achat RevenueCat, pour vérifier ton abonnement et compter ton crédit d’IA.</p>
+  <p>Ces données passent par nos fonctions hébergées chez Supabase, puis par OpenRouter, qui les transmet au modèle d’IA : Claude (Anthropic), ou Mistral Small (Mistral AI) en secours. La voix est transcrite par Gemini (Google), ou Voxtral (Mistral AI) en secours. Ces modèles fonctionnent chez des hébergeurs choisis par OpenRouter, par exemple Amazon Web Services, Google, Mistral AI ou DeepInfra.</p>
+  <p>Ogma ne conserve ni tes textes ni tes enregistrements : la réponse t’est renvoyée, puis gardée sur ton téléphone. OpenRouter ne garde pas le contenu des demandes, seulement des informations techniques (modèle utilisé, taille, coût). Ogma lui demande de n’utiliser que des hébergeurs qui, selon OpenRouter, ne conservent pas les données des demandes et ne s’en servent pas pour entraîner leurs modèles ; si aucun ne remplit cette condition, la demande n’est pas envoyée.</p>
+  <p>Le micro n’est utilisé que lorsque tu appuies pour enregistrer. Ce que tu confies peut être personnel : c’est toi qui choisis ce que tu envoies, et mieux vaut éviter les détails qui permettent d’identifier d’autres personnes.</p>
+
   <h2 id="ce-qui-est-garde-sur-nos-serveurs">Ce qui est gardé sur nos serveurs</h2>
-  <p>Pour ton crédit d’IA : ton identifiant anonyme, le mois, le nombre de demandes et leur coût. Ces chiffres ne contiennent rien de ce que tu as écrit ou dit.</p>
-  <p>Si tu écris dans « Ce que je pense de l’app » : ton message, le contact que tu choisis de laisser (facultatif) et ton identifiant anonyme. Ils sont lus seulement par l’éditeur, qui les supprime une fois ta demande traitée.</p>
-  <p>Si tu évalues une leçon à la fin de celle-ci : ta note sur 5, ton commentaire (facultatif), le nom de la leçon et ton identifiant anonyme. Ils sont lus seulement par l’éditeur, pour améliorer les leçons.</p>
-  <p>Comme tout service en ligne, notre hébergeur enregistre des journaux techniques à chaque appel (adresse IP, pays et ville approximatifs, type d’appareil, date), gardés quelques jours pour la sécurité et le bon fonctionnement.</p>
-  <h2 id="paiement">Paiement</h2>
-  <p>Les achats passent par Apple. Ogma ne reçoit ni ta carte bancaire ni ton identité ; seulement la confirmation de ton abonnement.</p>
-  <h2 id="ou-vont-tes-donnees">Où vont tes données</h2>
-  <p>Les serveurs d’Ogma (Supabase) sont situés en Europe. OpenRouter et les fournisseurs d’IA peuvent traiter les demandes hors de Suisse et de l’Union européenne, notamment aux États-Unis, avec les garanties prévues par leurs conditions (par exemple les clauses contractuelles types).</p>
+  <p>Les serveurs d’Ogma sont chez Supabase. On y garde seulement :</p>
+  <ul>
+    <li><strong>Ton crédit d’IA</strong> : l’identifiant de ton abonnement (attribué par Apple) ou ton identifiant anonyme, le mois, le nombre de demandes et leur coût. Rien de ce que tu as écrit ou dit.</li>
+    <li><strong>La vérification de ton abonnement</strong> : ton identifiant d’achat RevenueCat, l’identifiant de ton abonnement et sa date de fin, pour ne pas interroger RevenueCat à chaque demande.</li>
+    <li><strong>Tes messages « Ce que je pense de l’app »</strong> : ton message, le contact que tu choisis de laisser (facultatif) et ton identifiant anonyme. Le message et le contact arrivent aussi par e-mail dans la boîte de l’éditeur, hébergée par OVHcloud. Les e-mails que tu envoies directement à contact@appogma.com arrivent dans cette même boîte.</li>
+    <li><strong>Tes avis sur les leçons</strong> : ta note, ton commentaire (facultatif), la leçon concernée et ton identifiant anonyme.</li>
+  </ul>
+  <p>Messages et avis sont lus seulement par l’éditeur. Les audios des leçons sont aussi hébergés chez Supabase : l’app les télécharge quand tu les écoutes.</p>
+  <p>Comme tout service en ligne, Supabase enregistre des journaux techniques à chaque appel (adresse IP, pays et ville approximatifs, type d’appareil, date). Ils ne contiennent pas tes textes.</p>
+
+  <h2 id="combien-de-temps">Combien de temps</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th scope="col">Données</th><th scope="col">Où</th><th scope="col">Durée</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Progression, journal, rêves, échanges, réglages</td><td data-label="Où">Ton téléphone</td><td data-label="Durée">Jusqu’à ce que tu les effaces ou supprimes l’app</td></tr>
+        <tr><td>Textes et enregistrements envoyés à l’IA</td><td data-label="Où">Nos fonctions, OpenRouter, modèle d’IA</td><td data-label="Durée">Pas conservés : seulement le temps de produire la réponse</td></tr>
+        <tr><td>Crédit d’IA</td><td data-label="Où">Supabase</td><td data-label="Durée">Effacé automatiquement 12 mois après la dernière demande comptée</td></tr>
+        <tr><td>Vérification de l’abonnement</td><td data-label="Où">Supabase</td><td data-label="Durée">Effacée automatiquement au plus tard 2 jours après la fin de ton abonnement</td></tr>
+        <tr><td>Messages et avis sur les leçons</td><td data-label="Où">Supabase, et boîte e-mail de l’éditeur pour les messages</td><td data-label="Durée">Supprimés une fois ta demande traitée, au plus tard 12 mois après l’envoi</td></tr>
+        <tr><td>Journaux techniques</td><td data-label="Où">Supabase</td><td data-label="Durée">7 jours</td></tr>
+        <tr><td>Achats et abonnement</td><td data-label="Où">Apple, RevenueCat</td><td data-label="Durée">Le temps de gérer ton abonnement, selon leurs propres conditions</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="abonnement-et-paiement">Abonnement et paiement</h2>
+  <p>Les achats, l’essai gratuit et les renouvellements passent par l’App Store d’Apple, selon la politique de confidentialité d’Apple. Ogma ne reçoit ni ta carte bancaire, ni ton nom, ni ton adresse e-mail Apple.</p>
+  <p>Pour savoir si ton abonnement est actif, Ogma utilise RevenueCat (RevenueCat, Inc., États-Unis). Dès l’ouverture de l’app, RevenueCat reçoit un identifiant d’achat anonyme qu’il crée lui-même, les informations de tes achats sur l’App Store (produit, dates, prix et devise, état de l’abonnement), la langue de ton téléphone et des informations techniques (versions d’iOS et de l’app, adresse IP). Il ne reçoit ni ta position ni d’identifiant publicitaire. Les serveurs d’Ogma l’interrogent aussi avec cet identifiant, pour vérifier ton abonnement avant d’appeler l’IA.</p>
+
+  <h2 id="prestataires-et-pays">Prestataires et pays</h2>
+  <ul>
+    <li><strong>Supabase</strong> : serveurs d’Ogma. La base de données est en Suède ; les fonctions s’exécutent dans la région la plus proche de toi (en Europe si tu y es).</li>
+    <li><strong>OpenRouter</strong> (États-Unis) et les fournisseurs d’IA <strong>Anthropic</strong> (États-Unis), <strong>Mistral AI</strong> (France) et <strong>Google</strong> (États-Unis), avec leurs hébergeurs.</li>
+    <li><strong>Apple</strong> et <strong>RevenueCat</strong> (États-Unis) : paiement et abonnement.</li>
+    <li><strong>OVHcloud</strong> (France) : boîte e-mail de l’éditeur.</li>
+    <li><strong>GitHub</strong> (États-Unis) : hébergement de ce site.</li>
+  </ul>
+  <p>Certaines données peuvent donc être traitées hors de Suisse et de l’Union européenne, notamment aux États-Unis, avec les garanties prévues par les conditions de ces prestataires (par exemple les clauses contractuelles types).</p>
+
   <h2 id="bases-legales">Bases légales</h2>
-  <p>Fournir les fonctions de l’app que tu utilises (contrat) ; ton accord pour les suggestions de réflexion et l’analyse des rêves, que tu peux retirer à tout moment dans Réglages ; la sécurité et la limitation des abus (intérêt légitime).</p>
+  <p>Ogma traite tes données pour te fournir les fonctions que tu utilises, abonnement compris (exécution du contrat) ; avec ton accord pour les pistes du journal et l’analyse des rêves, que tu peux retirer à tout moment dans Réglages ; et pour la sécurité, la limitation des abus et la réponse à tes messages (intérêt légitime).</p>
+
   <h2 id="tes-droits">Tes droits</h2>
-  <p>Tu peux demander l’accès à tes données, leur correction, leur effacement ou leur portabilité, t’opposer à un traitement et retirer ton accord, en écrivant à <a href="mailto:appogma@gmail.com">appogma@gmail.com</a>. Comme Ogma n’a pas de compte, la plupart de tes données sont sur ton téléphone et tu peux les effacer toi-même.</p>
-  <p>Tu peux aussi t’adresser au Préposé fédéral à la protection des données (PFPDT, Suisse) ou à l’autorité de ton pays (en France, la CNIL).</p>
+  <p>Tu peux demander l’accès à tes données, leur correction, leur effacement ou leur portabilité, t’opposer à un traitement et retirer ton accord, en écrivant à <a href="mailto:contact@appogma.com">contact@appogma.com</a>. Comme Ogma ne te connaît pas par ton nom, indique-nous ce qui permet de retrouver tes données, par exemple la date de ton message ou le contact laissé. La plupart de tes données sont sur ton téléphone : tu peux les effacer toi-même.</p>
+  <p>Tu peux aussi t’adresser au Préposé fédéral à la protection des données et à la transparence (PFPDT, Suisse) ou à l’autorité de protection des données de ton pays (en France, la CNIL).</p>
+
+  <h2 id="securite">Sécurité</h2>
+  <p>Les échanges entre l’app et nos serveurs sont chiffrés (HTTPS). Les clés d’accès aux services d’IA et de paiement restent sur nos serveurs, jamais dans l’app.</p>
+
   <h2 id="age-minimum">Âge minimum</h2>
   <p>Ogma est réservé aux personnes de 16 ans et plus.</p>
+
+  <h2 id="liens">Liens vers d’autres sites</h2>
+  <p>L’app peut ouvrir la page d’un autre site, par exemple sur les rêves lucides. Ce site applique alors sa propre politique de confidentialité.</p>
+
   <h2 id="modifications">Modifications</h2>
-  <p>Cette politique sera mise à jour si le fonctionnement d’Ogma change (par exemple avec l’arrivée d’un compte). La date figure en haut de cette page.</p>
+  <p>Cette politique sera mise à jour si le fonctionnement d’Ogma change, par exemple avec l’arrivée d’un compte. La date de mise à jour figure en haut de cette page.</p>
+
   <h2 id="ce-site-web">Ce site web</h2>
   <p>Ce site présente Ogma. Il n’utilise ni cookies, ni mesure d’audience, ni contenu chargé depuis un autre site. Il est hébergé par GitHub Pages (GitHub, Inc., États-Unis), qui enregistre l’adresse IP des visiteurs pour des raisons de sécurité.</p>
 </article>
@@ -68,7 +161,7 @@
   <div class="wrap">
     <div>
       <a class="brand" href="index.html"><img src="assets/img/icone-ogma-96.png" alt="" width="32" height="32"><span>Ogma</span></a>
-      <p>Édité par Maxence Delporte, Genève (Suisse).<br><a href="mailto:appogma@gmail.com">appogma@gmail.com</a></p>
+      <p><a href="mailto:contact@appogma.com">contact@appogma.com</a></p>
     </div>
     <nav aria-label="Informations">
       <ul>
