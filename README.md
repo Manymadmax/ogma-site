@@ -3,7 +3,8 @@
 Site statique (HTML et CSS, sans outil de compilation), publié avec GitHub Pages.
 
 - `index.html` : accueil
-- `confidentialite.html` et `conditions.html` : copies des textes légaux de l'app (`src/features/legal/texts.ts` dans le dépôt Ogma). À mettre à jour en même temps que l'app.
+- `confidentialite.html` : politique de confidentialité (la même que dans l'app, `src/features/legal/texts.ts` dans le dépôt Ogma). À mettre à jour en même temps que l'app.
+- Conditions d'utilisation : les liens du site renvoient à l'EULA standard d'Apple (6 novembre 2026, choix de Max). `conditions.html` (anciennes conditions propres à Ogma) n'est plus reliée depuis le site.
 - `support.html` : aide, contact et mentions légales
 - `404.html` : page affichée pour une adresse qui n'existe pas
 - `assets/` : style, polices (Figtree et Source Serif 4, licence OFL incluse) et images
