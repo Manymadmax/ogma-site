@@ -88,7 +88,7 @@
   </ul>
   <p>Chaque demande est accompagnée de ton identifiant anonyme et de ton identifiant d’achat RevenueCat, pour vérifier ton abonnement et compter ton crédit d’IA.</p>
   <p>Ces données passent par nos fonctions hébergées chez Supabase, puis par OpenRouter, qui les transmet au modèle d’IA : Claude (Anthropic), ou Mistral Small (Mistral AI) en secours. La voix est transcrite par Gemini (Google), ou Voxtral (Mistral AI) en secours. Ces modèles fonctionnent chez des hébergeurs choisis par OpenRouter, par exemple Amazon Web Services, Google, Mistral AI ou DeepInfra.</p>
-  <p>Ogma ne conserve ni tes textes ni tes enregistrements : la réponse t’est renvoyée, puis gardée sur ton téléphone. OpenRouter ne garde pas le contenu des demandes, seulement des informations techniques (modèle utilisé, taille, coût). Ogma lui demande de n’utiliser que des hébergeurs qui, selon OpenRouter, ne conservent pas les données des demandes et ne s’en servent pas pour entraîner leurs modèles ; si aucun ne remplit cette condition, la demande n’est pas envoyée.</p>
+  <p>Ogma ne conserve ni tes textes ni tes enregistrements : la réponse t’est renvoyée, puis gardée sur ton téléphone. OpenRouter ne garde pas le contenu des demandes, seulement des informations techniques (modèle utilisé, taille, coût). Ogma lui demande de n’utiliser que des hébergeurs qui, selon OpenRouter, ne collectent pas les données des demandes et ne s’en servent pas pour entraîner leurs modèles ; certains peuvent toutefois les garder brièvement pour lutter contre les abus. Si aucun hébergeur ne remplit ces conditions, la demande n’est pas envoyée.</p>
   <p>Le micro n’est utilisé que lorsque tu appuies pour enregistrer. Ce que tu confies peut être personnel : c’est toi qui choisis ce que tu envoies, et mieux vaut éviter les détails qui permettent d’identifier d’autres personnes.</p>
 
   <h2 id="ce-qui-est-garde-sur-nos-serveurs">Ce qui est gardé sur nos serveurs</h2>
@@ -110,7 +110,7 @@
       </thead>
       <tbody>
         <tr><td>Progression, journal, rêves, échanges, réglages</td><td data-label="Où">Ton téléphone</td><td data-label="Durée">Jusqu’à ce que tu les effaces ou supprimes l’app</td></tr>
-        <tr><td>Textes et enregistrements envoyés à l’IA</td><td data-label="Où">Nos fonctions, OpenRouter, modèle d’IA</td><td data-label="Durée">Pas conservés : seulement le temps de produire la réponse</td></tr>
+        <tr><td>Textes et enregistrements envoyés à l’IA</td><td data-label="Où">Nos fonctions, OpenRouter, modèle d’IA</td><td data-label="Durée">Pas conservés par Ogma, seulement le temps de produire la réponse</td></tr>
         <tr><td>Crédit d’IA</td><td data-label="Où">Supabase</td><td data-label="Durée">Effacé automatiquement 12 mois après la dernière demande comptée</td></tr>
         <tr><td>Vérification de l’abonnement</td><td data-label="Où">Supabase</td><td data-label="Durée">Effacée automatiquement au plus tard 2 jours après la fin de ton abonnement</td></tr>
         <tr><td>Messages et avis sur les leçons</td><td data-label="Où">Supabase, et boîte e-mail de l’éditeur pour les messages</td><td data-label="Durée">Supprimés une fois ta demande traitée, au plus tard 12 mois après l’envoi</td></tr>
